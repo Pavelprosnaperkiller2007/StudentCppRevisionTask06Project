@@ -22,5 +22,15 @@
 */
 
 bool task01(int x, int y) {
-	return false;
+
+	if (x <= 0  x > 8  y <= 0 || y > 8) {
+		return false;
+	}
+
+	if ((x % 2 != 0 && y % 2 != 0) || (x % 2 == 0 && y % 2 == 0)) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
